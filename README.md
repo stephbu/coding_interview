@@ -1,6 +1,4 @@
-# coding_interview
-
-Coding Interview Questions
+## Coding Interview Questions
 
 1.1 Unique Characters
 1.2 String Reverse
