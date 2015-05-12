@@ -29,10 +29,9 @@ bool IsPermutation(char* src, char* test) {
     
     // test against map
     for(int index = 0; index < testLength; index++) {
-        if(map[test[index]] == 0) {
+        if(--map[test[index]] < 0) {
             return false;
         }
-        map[test[index]]--;
     }
 
     return true;    
