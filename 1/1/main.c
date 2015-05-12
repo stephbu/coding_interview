@@ -6,29 +6,29 @@ typedef enum { false, true } bool;
 
 bool IsUnique(char* input) {
 	
-	if(NULL == input) {
-		return true;
-	}
-	
-	int length = strlen(input);
-	
-	if(length < 2) {
-		return true;
-	}
-	
-	// no need to check the last character
-	for(int index = 0; index < length - 1; index++) {
-		for(int offset = index + 1; offset < length; offset++) {
-			
-			printf("%c = %c\r\n", input[index], input[offset]);
-			
-			if(input[index] == input[offset]) {
-				return false;
-			}
-		}
-	}
-	
-	return true;
+    if(NULL == input) {
+    	return true;
+    }
+    
+    int length = strlen(input);
+    
+    if(length < 2) {
+    	return true;
+    }
+    
+    // no need to check the last character
+    for(int index = 0; index < length - 1; index++) {
+    	for(int offset = index + 1; offset < length; offset++) {
+    		
+    		printf("%c = %c\r\n", input[index], input[offset]);
+    		
+    		if(input[index] == input[offset]) {
+                return false;
+            }
+    	}
+    }
+    
+    return true;
 }
 
 int main() {
